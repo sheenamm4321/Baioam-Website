@@ -1603,3 +1603,46 @@ footer .contact-us p div i {
   background: #fff;
   color: #fa2424;
 }
+
+
+
+
+
+.experts{
+  display: flex;
+  flex-direction: row;
+}
+.expertImage{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+#left{
+  margin-left: 0;
+}
+#right{
+  margin-right: 0;
+}
+.expertImage .about p{
+  padding-bottom: 1rem;
+}
+@media (max-width : 1025px){
+  .expertImage .about h4{
+      font-size: 1.2rem;
+  }   
+}
+
+@media (max-width: 1000px) {
+  .experts{
+      overflow-x: auto;
+  }
+  .expertImage img{
+      width: 50vw;
+  }
+  .expertImage .about h4{
+      font-size: 1rem;
+  }
+  .expertImage .about p{
+      font-size: 0.8rem;
+      padding-bottom: 1rem;
+  }
+}
