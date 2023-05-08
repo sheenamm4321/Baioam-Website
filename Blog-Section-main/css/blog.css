@@ -80,10 +80,16 @@ color: orangered;
 .blog-content p {
   color: rgb(71, 71, 110);
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.6rem;
 }
+
+#blog-content-left-space{
+  padding-left: 2rem;
+  text-align: justify;
+}
+
 .sub-content1 .content p {
   font-size: 1.1rem;
   font-weight: 500;
@@ -93,7 +99,7 @@ color: orangered;
 .blog-content p span {
   /* color: rgb(1, 1, 68); */
   color: rgb(60, 60, 92);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 650;
 }
 
@@ -104,9 +110,9 @@ color: orangered;
 }
 .sub-content1 .fa {
   border-radius: 50%;
-  padding: 7px;
+  padding: 4px;
   color: orangered;
-  margin-right: 20px;
+  margin-right: 8px;
   box-shadow: 1px 1px 12px 4px rgb(211, 207, 207);
 }
 
