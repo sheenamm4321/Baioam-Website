@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.underline {
+    position: relative;
+    background: -webkit-linear-gradient(0deg, #fa2424, #fb8721);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid rgb(245, 69, 0);
+}
+
+.one{
+    color : white;
+    /* height: 90vh; */
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    border-radius: 30px;
+    /* background-image: url("bg.png");
+    background-size: cover; */
+    /* background: linear-gradient(45deg, #fa2424, #fb8721); */
+    display: flex;
+}
+.one .info{
+    margin-left: 3rem;
+    padding-top: 1rem;
+    width: 45vw;
+}
+.one #certified{
+    border: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    background: -webkit-linear-gradient(45deg, #ff0000, #ff8000);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.one #certified:hover{
+    background: -webkit-linear-gradient(45deg, #ff8000, #ff0000);
+}
+.one h1{
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #040052;
+    margin-top: 1rem;
+}
+.one p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #5e5e5e;
+}
+.one .button{
+    border: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color:#040052;
+    background-color: white;
+    border:2px solid #040052;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    margin-left: 0;
+    border-radius: 5px;
+    width: 35vw;
+}
+
+.one .button-div{
+    width: 40vw;
+}
+.one .offer{
+    border: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    background: -webkit-linear-gradient(45deg, #ff0000, #ff8000);
+    padding: 0.5rem;
+    width: 35vw;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.one .offer:hover{
+    background: -webkit-linear-gradient(45deg, #ff8000, #ff0000);
+}
+.one img{
+    /* height:80vh; */
+    width: 45vw;
+}
+
+
+.two{
+    margin-bottom: 5rem;
+}
+.two img{
+    height : 7vh;
+    margin-right:1rem;
+    border-radius: 10px;
+}
+.two h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #040052
+}
+.two .features{
+    display: flex;
+    flex-direction: column;
+}
+.two ul{
+    list-style-type: none;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+}
+.two li{
+    display: flex;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 40vw;
+}
+.two li p{
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #5e5e5e;
+}
+.two .heading{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #040052
+}
+
+
+.three, .five{
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.three h3, .five h3{
+    margin-bottom: 2rem;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #040052
+}
+.three .why-web-dev, .five .why-web-dev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    /* margin-right: 5rem; */
+}
+.three p, .five p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color : #5e5e5e
+}
+.three .heading, .five .heading{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #040052;
+    margin-bottom: 0;
+}
+.three img, .five img{
+    width: 40vw;
+    border-radius: 30px;
+}
+
+
+.four{
+    display: flex;
+    /* align-items: center; */
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+.four h1{
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #040052
+}
+.four img{
+    height: 45vh;
+    display: block;
+    margin: auto;
+}
+.four .details{
+    width: 50vw;
+    margin-left: 10rem;
+}
+.four p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color : #5e5e5e
+}
+
+
+.six{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.six img{
+    height : 7vh;
+    margin-right:1rem;
+    border-radius: 10px;
+}
+.six h1{
+    margin-bottom: 2rem;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #040052
+}
+.six .features{
+    display: flex;
+    flex-direction: column;
+}
+.six ul{
+    list-style-type: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+}
+.six li{
+    display: flex;
+    margin-bottom: 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 35vw;
+}
+.six li p{
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color : #5e5e5e
+}
+.six .heading{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #040052;
+}
+
+
+.seven{
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seven h1{
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #040052;
+    margin-bottom: 2rem;
+}
+.seven .accordion{
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+.seven .accordion button{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #040052;
+}
+
+.eight{
+    margin-bottom: 5rem;
+}
+.eight h1{
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #040052;
+    margin-bottom: 2rem;
+}
+.eight .myTeachers{
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.eight .card{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.eight .card p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color : #5e5e5e
+}
+
+.nine{
+    margin-bottom: 5rem;
+}
+.nine h1{
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #040052;
+    margin-bottom: 0.5rem;
+}
+.nine h2{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #040052;
+    margin-bottom: 3rem;
+}
+
+
+@media(max-width:1240px){
+    .one{
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .one .info{
+        width: 90vw;
+        display: block;
+        margin: auto;
+    }
+    .one .button-div{
+        display: flex;
+        width: 90vw;
+    }
+    .one .button-div #button2{
+        margin-left: 2rem;
+    }
+    .one .offer{
+        width: 85vw;
+    }
+    .one img{
+        width: 50vw;
+        display: block;
+        margin: auto;
+    }
+
+    .three, .five{
+        flex-direction: column;
+        align-items: center;
+    }
+    .three .why-web-dev, .five .why-web-dev{
+        width: 90vw;
+        
+    }
+    .three img, .five img{
+        width: 50vw;
+    }
+
+    .four{
+        flex-direction: column-reverse;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .four .details{
+        width: 90vw;
+        display: block;
+        margin: auto;
+    }
+    .four img{
+        height: 45vh;
+        margin-top: 2rem;
+    }
+
+    .seven .accordion{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .eight .card{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+@media(max-width:1000px){
+
+    .two li{
+        width: 50vw;
+        margin-bottom: 1.5rem;
+    }
+    .two #last{
+        margin-bottom: 0;
+    }
+    .two ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .four .details{
+        width: 80vw;
+        display: block;
+        margin: auto;
+    }
+
+    .six{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .six h1{
+        width: 80vw;
+        display: block;
+        margin: auto;
+    }
+    .six #first{
+        margin-top: 2.5rem;
+    }
+    .six .features{
+        align-items: center;
+    }
+    .six ul{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .six li{
+        width: 70vw;
+        margin-bottom: 1.5rem;
+    }
+
+    .eight .myTeachers{
+        flex-direction: column;
+        align-items: center;
+    }
+    .eight .card{
+        width: 30rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media(max-width:750px){
+    .two li{
+        width: 60vw;
+    }
+    .four img{
+        height: 35vh;
+    }
+    .seven .accordion{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media(max-width:600px){
+    .two li{
+        width: 80vw;
+    }
+    .four img{
+        height:25vh
+    }
+    .eight .card{
+        width: 20rem;
+    }
+}
+
+@media(max-width:500px){
+    .one h1, .two h1, .three h3, .four h1, .five h3, .six h1, .seven h1, .eight h1, .nine h1{
+        font-size: 2.8rem;
+    }
+    .one p, .one .button, .one .offer{
+        font-size: 15px;
+    }
+    .two li p, .three p, .four p, .five p, .six li p, .eight .card p{
+        font-size: 15px;
+    }
+    .two .heading, .three .heading, .five .heading, .six .heading, .seven .accordion button, .nine h2{
+        font-size: 23px;
+    }
+    .two img, .six img{
+        height:5vh
+    }
+}
