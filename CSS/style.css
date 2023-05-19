@@ -1149,6 +1149,46 @@ p.virtues-sub-heading {
   padding: 40px;
 }
 
+.nav-courses-list{
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding:20px 0;
+  width:300px;
+  top:100%;
+  left:-100%;
+  background-color: white;
+  color:black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(19, 18, 18, 0.2);
+}
+
+.fa-location-arrow{
+  font-size: 12px;
+}
+
+.nav-courses-list li a{
+  display: flex;
+  width: 100%;
+  padding:15px 20px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-courses-list li a:hover{
+  color:orangered !important;
+}
+
+.nav-courses-list li[selected='true']{
+  background-color: rgba(128, 128, 128, 0.137);
+}
+
+.fa-location-arrow{
+  transform:rotate(45deg);
+}
+
 .nav-btn::after,
 .nav-btn::before {
   font-size: 20px !important;

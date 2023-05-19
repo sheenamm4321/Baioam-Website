@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .underline {
@@ -14,7 +15,6 @@
 .one{
     color : white;
     /* height: 90vh; */
-    margin-left: 3rem;
     margin-right: 3rem;
     margin-top: 2rem;
     margin-bottom: 5rem;
@@ -43,13 +43,14 @@
     background: -webkit-linear-gradient(45deg, #ff8000, #ff0000);
 }
 .one h1{
-    font-size: 3.8rem;
+    font-size: 50px;
     font-weight: bold;
     color: #040052;
     margin-top: 1rem;
+    padding:20px 0;
 }
 .one p{
-    font-size: 1.1rem;
+    font-size: 15px;
     font-weight: 500;
     color: #5e5e5e;
 }
@@ -66,6 +67,15 @@
     margin-left: 0;
     border-radius: 5px;
     width: 35vw;
+    /* z-index:3; */
+}
+
+.btn-feature{
+    transition: background 200ms ease-in;
+}
+
+.btn-feature:hover{
+    background-color: #fb8721;
 }
 
 .one .button-div{
@@ -77,78 +87,92 @@
     font-size: 1.1rem;
     font-weight: 500;
     color: white;
-    background: -webkit-linear-gradient(45deg, #ff0000, #ff8000);
+    background: -webkit-linear-gradient(45deg, #ff0000, #ff5100);
+    /* background-color: #ff5100; */
+    box-shadow: 10px 10px 5px #ff5100cc;
     padding: 0.5rem;
     width: 35vw;
     border-radius: 5px;
     margin-top: 1rem;
 }
-.one .offer:hover{
+/* .one .offer:hover{
     background: -webkit-linear-gradient(45deg, #ff8000, #ff0000);
-}
+} */
 .one img{
     /* height:80vh; */
     width: 45vw;
 }
 
+/* # section two */
 
 .two{
     margin-bottom: 5rem;
 }
 .two img{
-    height : 7vh;
-    margin-right:1rem;
-    border-radius: 10px;
+    width:100px;
+    height: 110px;
+    aspect-ratio: 16/9;
 }
+
 .two h1{
-    text-align: center;
     margin-bottom: 2rem;
-    font-size: 3.8rem;
+    text-align: center;
+    font-size: 55px;
     font-weight: bold;
-    color: #040052
+    color: #040052;
+    padding-bottom:45px;
+    
 }
 .two .features{
     display: flex;
-    flex-direction: column;
+    justify-content:center;
 }
+
+
 .two ul{
-    list-style-type: none;
-    margin-left: 3rem;
-    margin-right: 3rem;
     display: flex;
-    flex-direction: row;   
+    flex-direction: column;
+    list-style-type: none;
     justify-content: center;
+    row-gap: 20px;
+    width:36%;
 }
+
 .two li{
     display: flex;
-    margin-bottom: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    width: 40vw;
+    column-gap: 25px;
+
 }
+
+.two li div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 5px;
+}
+
 .two li p{
-    margin-bottom: 0;
-    font-size: 1.1rem;
+    font-size: 14px;
     font-weight: 500;
     color: #5e5e5e;
 }
 .two .heading{
-    font-size: 1.7rem;
+    font-size: 18px;
     font-weight: 700;
-    color: #040052
+    color: #040052;
+    line-height: 25px;
 }
 
 
 .three, .five{
     display: flex;
     margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-top: 10px;
+    margin-bottom: 80px;
 }
 .three h3, .five h3{
+    font-size: 55px;
     margin-bottom: 2rem;
-    font-size: 3.8rem;
     font-weight: bold;
     color: #040052
 }
@@ -160,98 +184,118 @@
     /* margin-right: 5rem; */
 }
 .three p, .five p{
-    font-size: 1.1rem;
+    font-size: 15px;
     font-weight: 500;
-    color : #5e5e5e
+    color : #5e5e5e;
+    width:400px;
 }
 .three .heading, .five .heading{
-    font-size: 1.7rem;
+    font-size: 25px;
     font-weight: 700;
     color: #040052;
-    margin-bottom: 0;
 }
-.three img, .five img{
+.three img{
     width: 40vw;
-    border-radius: 30px;
+    aspect-ratio: 16/14;
+    margin-top: 30px;
+    /* border-radius: 30px; */
 }
 
 
 .four{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
+    justify-content: center;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
 }
 .four h1{
-    font-size: 3.8rem;
+    font-size: 45px;
     font-weight: bold;
     color: #040052
 }
 .four img{
-    height: 45vh;
-    display: block;
-    margin: auto;
+    width:450px;
+    height: 300px;
+    aspect-ratio: 16/9;
 }
 .four .details{
     width: 50vw;
     margin-left: 10rem;
 }
 .four p{
-    font-size: 1.1rem;
+    font-size: 15px;
     font-weight: 500;
     color : #5e5e5e
 }
 
+.five img{
+    width:600px;
+    aspect-ratio: 16/14;
+}
+
+.five h3{
+    font-size: 45px;
+}
+
 
 .six{
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
 }
 .six img{
-    height : 7vh;
-    margin-right:1rem;
-    border-radius: 10px;
+    width:110px;
+    height: 120px;
+    aspect-ratio: 16/9;
 }
 .six h1{
-    margin-bottom: 2rem;
-    font-size: 3.8rem;
+    padding-bottom: 75px;
+    font-size: 55px;
     font-weight: bold;
     color: #040052
 }
 .six .features{
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    justify-content: center;
 }
 .six ul{
-    list-style-type: none;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
     display: flex;
-    flex-direction: row;   
+    flex-direction: column;
+    list-style-type: none;
     justify-content: center;
+    row-gap: 20px;
+    width:35%;
 }
 .six li{
     display: flex;
-    margin-bottom: 0.5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    width: 35vw;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
 }
+
+.six li div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+
 .six li p{
-    margin-bottom: 0;
-    font-size: 1.1rem;
+    font-size: 14px;
     font-weight: 500;
-    color : #5e5e5e
+    color : #5e5e5e;
+    margin-bottom:0;
 }
 .six .heading{
-    font-size: 1.7rem;
+    font-size: 18px;
     font-weight: 700;
     color: #040052;
+    margin-bottom: 0;
 }
 
 
@@ -261,23 +305,26 @@
     flex-direction: column;
     align-items: center;
 }
+
 .seven h1{
     text-align: center;
     margin-left: 3rem;
     margin-right: 3rem;
-    font-size: 3.8rem;
+    font-size: 55px;
     font-weight: bold;
     color: #040052;
-    margin-bottom: 2rem;
+    margin-bottom: 60px;
 }
-.seven .accordion{
-    margin-left: 25rem;
-    margin-right: 25rem;
+
+.accordion{
+    width:100%;
 }
-.seven .accordion button{
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: #040052;
+
+.accordion button{
+    font-size: 30px;
+    background-image: linear-gradient(90deg,#ec2323e0,rgba(243, 135, 27, 0.89));
+    color:whitesmoke;
+    font-weight: 500;
 }
 
 .eight{
@@ -321,7 +368,7 @@
     font-size: 1.7rem;
     font-weight: 700;
     color: #040052;
-    margin-bottom: 3rem;
+    margin-bottom: 80px;
 }
 
 

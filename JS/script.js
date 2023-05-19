@@ -122,3 +122,33 @@ var swiper = new Swiper(".mySwiperr", {
         },
       });
 
+
+// Adding and removing blocks when hover on links
+const navCourses = document.querySelector("#nav-courses")
+const navCoursesList = document.querySelector(".nav-courses-list")
+
+function AddHoveringDisplayEffectOnLinks(parent,child){
+  parent.addEventListener('mouseenter',()=>{
+    child.style.display = 'block';
+  })
+  
+  parent.addEventListener('mouseleave',()=>{
+    child.style.display = 'none';
+  })  
+}
+
+AddHoveringDisplayEffectOnLinks(navCourses,navCoursesList)
+AddHoveringDisplayEffectOnLinks(navCoursesList,navCoursesList)
+
+// Adding effect when hovering on list items in navbar courses
+const navCoursesListItems = document.querySelectorAll(".nav-courses-list li")
+
+navCoursesListItems.forEach((item)=>{
+  item.addEventListener('mouseenter',()=>{
+    item.setAttribute("selected",'true')
+  })
+
+  item.addEventListener('mouseleave',()=>{
+    item.setAttribute("selected",'false')
+  })
+})

@@ -17,6 +17,7 @@
     text-align: center;
     color: #031864;
     font-weight: bold;
+    margin-bottom:50px;
   }
   
   .ac-main h1 span {
@@ -49,7 +50,6 @@
   
   .faq .accordion-item-header:hover {
     color: rgb(251, 96, 13);
-    font-size: 1.05rem;
   }
   
   .faq .accordion-item-header::after {
