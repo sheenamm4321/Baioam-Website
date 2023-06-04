@@ -5,7 +5,7 @@
   }
   
   .faq .accordion {
-    width: 72%;
+    width: 100%;
     max-width: 1000px;
     margin: 2rem auto;
   
@@ -13,7 +13,7 @@
   
   .ac-main h1 {
     margin-top: 50px;
-    font-size: 50px;
+    font-size: 3rem;
     text-align: center;
     color: #031864;
     font-weight: bold;
@@ -21,7 +21,7 @@
   }
   
   .ac-main h1 span {
-    font-size: 50px;
+    font-size: 3rem;
     background: -webkit-linear-gradient(45deg, #fa2424, #fb8721);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -37,10 +37,9 @@
   }
   
   .faq .accordion-item-header {
-    padding: 0.5rem 3rem 0.5rem 1rem;
+    font-size: 1.2rem;
+    padding: 2rem 3rem;
     min-height: 3.5rem;
-  
-  
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -56,7 +55,13 @@
     content: "\002B";
     font-size: 2rem;
     position: absolute;
-    right: 1rem;
+    right: 3rem;
+  }
+
+  @media (max-width:700px){
+    .faq .accordion-item-header::after {
+      display: none;
+    } 
   }
   
   .faq .accordion-item-header.active::after {

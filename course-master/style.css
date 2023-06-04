@@ -1,6 +1,7 @@
-*{
+*,html{
     margin: 0;
     padding: 0;
+    color: #040052;
     box-sizing: border-box;
 }
 
@@ -14,22 +15,19 @@
 
 .one{
     color : white;
-    /* height: 90vh; */
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 1em;
     border-radius: 30px;
-    /* background-image: url("bg.png");
-    background-size: cover; */
-    /* background: linear-gradient(45deg, #fa2424, #fb8721); */
+    margin-bottom: 4em;
     display: flex;
+    align-items: center;
 }
 .one .info{
     margin-left: 3rem;
     padding-top: 1rem;
     width: 45vw;
 }
-.one #certified{
+.one #certified,
+.btn-enroll{
     border: 0;
     outline: 0;
     font-size: 1.1rem;
@@ -39,11 +37,19 @@
     padding: 1rem;
     border-radius: 5px;
 }
-.one #certified:hover{
+
+.one #certified:hover,
+.btn-enroll:hover{
     background: -webkit-linear-gradient(45deg, #ff8000, #ff0000);
 }
+
+.btn-enroll{
+    font-size: 1.2rem;
+    width:100%;
+}
+
 .one h1{
-    font-size: 50px;
+    font-size: clamp(0.8rem,calc(2.2rem + 0.5vw),2.6rem);
     font-weight: bold;
     color: #040052;
     margin-top: 1rem;
@@ -54,68 +60,46 @@
     font-weight: 500;
     color: #5e5e5e;
 }
-.one .button{
-    border: 0;
-    outline: 0;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color:#040052;
-    background-color: white;
-    border:2px solid #040052;
-    padding: 0.5rem;
-    margin: 0.3rem;
-    margin-left: 0;
-    border-radius: 5px;
-    width: 35vw;
-    /* z-index:3; */
-}
 
-.btn-feature{
-    transition: background 200ms ease-in;
-}
-
-.btn-feature:hover{
-    background-color: #fb8721;
-}
-
-.one .button-div{
-    width: 40vw;
-}
 .one .offer{
     border: 0;
     outline: 0;
-    font-size: 1.1rem;
+    font-size: clamp(0.6rem,calc(0.8rem + 0.2vw),1.2rem);
     font-weight: 500;
-    color: white;
-    background: -webkit-linear-gradient(45deg, #ff0000, #ff5100);
-    /* background-color: #ff5100; */
-    box-shadow: 10px 10px 5px #ff5100cc;
-    padding: 0.5rem;
-    width: 35vw;
+    background-color: white;
+    color: #040052;
+    box-shadow: 0 0 2px black;
+    padding: 0.5em 0.8em;
+    width: 98%;
     border-radius: 5px;
     margin-top: 1rem;
+    margin-bottom:2em;
+    text-align: start;
 }
-/* .one .offer:hover{
-    background: -webkit-linear-gradient(45deg, #ff8000, #ff0000);
-} */
+
+
 .one img{
-    /* height:80vh; */
-    width: 45vw;
+    width: 35em;
 }
 
 /* # section two */
 
 .two{
-    margin-bottom: 5rem;
+    margin-bottom: 1em;
+    padding:0 !important;
 }
-.two img{
-    width:100px;
-    height: 110px;
-    aspect-ratio: 16/9;
+
+.two i,
+.six i{
+    margin:auto 0;
+    padding:0.8em 0.8em;
+    background-color: #f7a053;
+    border-radius: 50%;
+    font-size: 1.5rem;
 }
 
 .two h1{
-    margin-bottom: 2rem;
+    margin-bottom: 0.5em;
     text-align: center;
     font-size: 55px;
     font-weight: bold;
@@ -123,120 +107,103 @@
     padding-bottom:45px;
     
 }
+
 .two .features{
-    display: flex;
-    justify-content:center;
+    display: grid;
+    place-items:center;
 }
 
-
 .two ul{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     list-style-type: none;
-    justify-content: center;
-    row-gap: 20px;
-    width:36%;
+    gap: 2em;
+    align-items: center;
+    max-width: 100em;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .two li{
     display: flex;
-    column-gap: 25px;
-
+    column-gap: 1em;
 }
 
 .two li div{
-    display:flex;
+    display:grid;
     flex-direction: column;
     justify-content: center;
-    line-height: 5px;
+    align-items: center;
+    line-height: 1em;
 }
 
-.two li p{
-    font-size: 14px;
+.two li p,
+.six li p{
+    font-size: clamp(0.5rem, 0.95rem ,1.5rem);
     font-weight: 500;
     color: #5e5e5e;
+    margin-bottom: 0;
+    line-height:1.3em;
 }
-.two .heading{
-    font-size: 18px;
+
+.two .heading,
+.six .heading{
+    font-size: clamp(0.9rem,1.18rem,1.5rem);
     font-weight: 700;
     color: #040052;
-    line-height: 25px;
+    margin-bottom:0;
+    line-height:1.3em;
 }
 
+/* section why-web-dev */
 
-.three, .five{
+.three{
+    margin-bottom: 0;
+}
+
+.why-web-dev-box, .placement-info{
     display: flex;
-    margin-left: 5rem;
-    margin-top: 10px;
-    margin-bottom: 80px;
+    margin-top: 3.5em;
+    align-items: center;
+    justify-content: center;
 }
+
+.five{
+    margin-bottom:2.5em;
+}
+
+#why-web-dev-heading-2,
+#placement-info-heading-2{
+    display:none;
+}
+
 .three h3, .five h3{
-    font-size: 55px;
+    font-size: 3rem;
     margin-bottom: 2rem;
     font-weight: bold;
     color: #040052
 }
-.three .why-web-dev, .five .why-web-dev{
+.why-web-dev-box .why-web-dev, .placement-info .why-web-dev{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vw;
-    /* margin-right: 5rem; */
+    width:30em;
 }
-.three p, .five p{
+.why-web-dev-box p, .placement-info p{
     font-size: 15px;
     font-weight: 500;
     color : #5e5e5e;
     width:400px;
+    margin-bottom: 1.5em;
 }
-.three .heading, .five .heading{
+
+.why-web-dev-box .heading, .placement-info .heading{
     font-size: 25px;
     font-weight: 700;
     color: #040052;
+    margin-bottom: 0.2em;
 }
-.three img{
-    width: 40vw;
+.why-web-dev-box img,.placement-info img{
+    width: 35em;
     aspect-ratio: 16/14;
-    margin-top: 30px;
-    /* border-radius: 30px; */
-}
-
-
-.four{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-}
-.four h1{
-    font-size: 45px;
-    font-weight: bold;
-    color: #040052
-}
-.four img{
-    width:450px;
-    height: 300px;
-    aspect-ratio: 16/9;
-}
-.four .details{
-    width: 50vw;
-    margin-left: 10rem;
-}
-.four p{
-    font-size: 15px;
-    font-weight: 500;
-    color : #5e5e5e
-}
-
-.five img{
-    width:600px;
-    aspect-ratio: 16/14;
-}
-
-.five h3{
-    font-size: 45px;
 }
 
 
@@ -246,29 +213,23 @@
     align-items: center;
     margin-bottom: 60px;
 }
-.six img{
-    width:110px;
-    height: 120px;
-    aspect-ratio: 16/9;
+
+.six i{
+    padding:1.2rem 1rem;
 }
+
+.six .features ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2em;
+    place-items:center;
+}
+
 .six h1{
-    padding-bottom: 75px;
+    margin-bottom: 3.5rem;
     font-size: 55px;
     font-weight: bold;
     color: #040052
-}
-.six .features{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-.six ul{
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    justify-content: center;
-    row-gap: 20px;
-    width:35%;
 }
 .six li{
     display: flex;
@@ -282,22 +243,8 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 5px;
+    max-width: 20em;
 }
-
-
-.six li p{
-    font-size: 14px;
-    font-weight: 500;
-    color : #5e5e5e;
-    margin-bottom:0;
-}
-.six .heading{
-    font-size: 18px;
-    font-weight: 700;
-    color: #040052;
-    margin-bottom: 0;
-}
-
 
 .seven{
     margin-bottom: 5rem;
@@ -317,13 +264,17 @@
 }
 
 .accordion{
-    width:100%;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.accordion-body{
+    font-size:1.3rem;
 }
 
 .accordion button{
-    font-size: 30px;
-    background-image: linear-gradient(90deg,#ec2323e0,rgba(243, 135, 27, 0.89));
-    color:whitesmoke;
+    color:#040052;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -371,61 +322,19 @@
     margin-bottom: 80px;
 }
 
+footer i{
+    color:white;
+}
+
+footer p{
+    color:white;
+}
+
 
 @media(max-width:1240px){
     .one{
-        flex-direction: column;
-        margin-left: 0;
-        margin-right: 0;
+        padding:2em !important;
     }
-    .one .info{
-        width: 90vw;
-        display: block;
-        margin: auto;
-    }
-    .one .button-div{
-        display: flex;
-        width: 90vw;
-    }
-    .one .button-div #button2{
-        margin-left: 2rem;
-    }
-    .one .offer{
-        width: 85vw;
-    }
-    .one img{
-        width: 50vw;
-        display: block;
-        margin: auto;
-    }
-
-    .three, .five{
-        flex-direction: column;
-        align-items: center;
-    }
-    .three .why-web-dev, .five .why-web-dev{
-        width: 90vw;
-        
-    }
-    .three img, .five img{
-        width: 50vw;
-    }
-
-    .four{
-        flex-direction: column-reverse;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .four .details{
-        width: 90vw;
-        display: block;
-        margin: auto;
-    }
-    .four img{
-        height: 45vh;
-        margin-top: 2rem;
-    }
-
     .seven .accordion{
         margin-left: 10rem;
         margin-right: 10rem;
@@ -436,96 +345,136 @@
         margin-right: 1rem;
     }
 }
-@media(max-width:1000px){
 
-    .two li{
-        width: 50vw;
-        margin-bottom: 1.5rem;
-    }
-    .two #last{
-        margin-bottom: 0;
-    }
-    .two ul{
-        flex-direction: column;
-        align-items: center;
+
+@media(max-width:1150px){
+    .one{
+        padding: 0 !important;
+        margin-top: 3em;
     }
 
-    .four .details{
-        width: 80vw;
-        display: block;
-        margin: auto;
+    header .navbar-nav {
+        padding-right: 1rem !important;
     }
 
-    .six{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .six h1{
-        width: 80vw;
-        display: block;
-        margin: auto;
-    }
-    .six #first{
-        margin-top: 2.5rem;
-    }
-    .six .features{
-        align-items: center;
-    }
-    .six ul{
-        flex-direction: column;
-        padding-left: 0;
-    }
-    .six li{
-        width: 70vw;
-        margin-bottom: 1.5rem;
+    header a,
+    header button{
+        font-size: 0.95rem !important;
     }
 
-    .eight .myTeachers{
-        flex-direction: column;
-        align-items: center;
+    header .nav-item button{
+        padding:0.5rem 0.8rem;
     }
-    .eight .card{
-        width: 30rem;
-        margin-bottom: 2.5rem;
+
+    .accordion{
+        width:80%;
+    }
+
+    .accordion-body{
+        font-size: 1.1rem;
+    }
+
+    .why-web-dev-box img,
+    .placement-info img{
+        width:30em;
     }
 }
 
-@media(max-width:750px){
-    .two li{
-        width: 60vw;
+@media (max-width:950px) {
+    .one{
+        margin-top: 1em;
     }
-    .four img{
-        height: 35vh;
+    #certified{
+        display: none;
     }
+
+    .why-web-dev-box img,
+    .one img,
+    .placement-info img{
+        width:25em;
+    }
+
+}
+
+
+@media(max-width:825px){
+    .one .info{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #why-web-dev-heading-2,
+    #placement-info-heading-2{
+        margin-top: 1em;
+        margin-bottom: -.4em;
+        display:grid;
+        place-items:center;
+        font-size: 2.8rem;
+        width: 100%;
+    }
+
+    #why-web-dev-heading-1,
+    #placement-info-heading-1{
+        display: none;
+    }
+
+    .three h3,
+    .placement-info h3{
+        font-size:2rem;
+        margin:0 auto;
+    }
+
+    .six h1,
+    .seven h1,
+    .nine h1{
+        font-size:2.5rem;
+    }
+
+    .nine h2{
+        margin-bottom: 1.5em;
+    }
+
+    .why-web-dev-box p,
+    .placement-info p{
+        font-size: 0.8rem;
+        width: 90%;
+    }
+
+    .why-web-dev-box .heading,
+    .placement-info .heading{
+        font-size: 1.5rem;
+    }
+
     .seven .accordion{
         margin-left: 5rem;
         margin-right: 5rem;
     }
 }
 
+@media (max-width:750px) {
+    .one img{
+        display:none;
+    }
+}
+
 @media(max-width:600px){
-    .two li{
-        width: 80vw;
-    }
-    .four img{
-        height:25vh
-    }
     .eight .card{
         width: 20rem;
     }
 }
 
 @media(max-width:500px){
-    .one h1, .two h1, .three h3, .four h1, .five h3, .six h1, .seven h1, .eight h1, .nine h1{
+    .one h1, .two h1, .why-web-dev-box h3, .four h1, .placement-info h3, .six h1, .seven h1, .eight h1, .nine h1{
         font-size: 2.8rem;
     }
     .one p, .one .button, .one .offer{
         font-size: 15px;
     }
-    .two li p, .three p, .four p, .five p, .six li p, .eight .card p{
+    .two li p, .why-web-dev-box p, .four p, .placement-info p, .six li p, .eight .card p{
         font-size: 15px;
     }
-    .two .heading, .three .heading, .five .heading, .six .heading, .seven .accordion button, .nine h2{
+    .two .heading, .why-web-dev-box .heading, .placement-info .heading, .six .heading, .seven .accordion button, .nine h2{
         font-size: 23px;
     }
     .two img, .six img{

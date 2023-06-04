@@ -18,7 +18,9 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!--js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
@@ -91,13 +93,10 @@
             <h1>Web <span class="underline">Development</span> Course</h1>
             <p>Learn Full Stack Web Development: HTML/CSS, MySQL, PHP, JavaScript, and React and build a website from
                 scratch!</p>
-            <p>Languages : Hindi, English</p>
-            <div class="button-div">
-                <button class="button btn-feature" id="button1">Feature 1</button>
-                <button class="button btn-feature" id="button2">Feature 2</button>
-            </div>
+            <p>Languages : <strong>Hindi, English</strong></p>
             <button class="offer">1+1 Offer: Get Internship & Job Preparation training FREE on purchase of Web
                 Development training!</button>
+            <button class="btn-enroll">Enroll Now</button>
         </div>
         <div class="pic">
             <img src="demo3.jpg">
@@ -109,67 +108,63 @@
         <div class="features">
             <ul>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-graduation-cap"></i>
                     <div>
                         <p class="heading">Learn Online</p>
                         <p>At your own schedule</p>
                     </div>
                 </li>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-sharp fa-solid fa-certificate"></i>
                     <div>
                         <p class="heading">Certificate Of Training</p>
                         <p>From Internshala Trainings</p>
                     </div>
                 </li>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-user-group"></i>
                     <div>
                         <p class="heading">Beginner friendly</p>
                         <p>No prior knowledge required</p>
                     </div>
                 </li>
-            </ul>
-            <ul>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-phone"></i>
                     <div>
                         <p class="heading">Mobile friendly</p>
                         <p>No laptop? No problem</p>
                     </div>
                 </li>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-diagram-project"></i>
                     <div>
-                        <p class="heading">1 project, 5 assignments</p>
+                        <p class="heading">Projects</p>
                         <p>For hands-on practice</p>
                     </div>
                 </li>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-calendar"></i>
                     <div>
                         <p class="heading">8 weeks duration</p>
                         <p>1 hr/day (flexible schedule)</p>
                     </div>
                 </li>
-            </ul>
-            <ul>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-handshake-angle"></i>
                     <div>
                         <p class="heading">Placement assistance</p>
                         <p>To build your career</p>
                     </div>
                 </li>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-lightbulb"></i>
                     <div>
                         <p class="heading">Doubt clearing</p>
                         <p>Through Q&A forum</p>
                     </div>
                 </li>
                 <li id="last">
-                    <img src="logo.png">
+                    <i class="fa-solid fa-business-time"></i>
                     <div>
                         <p class="heading">Downloadable content</p>
                         <p>With lifetime access</p>
@@ -180,97 +175,82 @@
     </section>
 
     <section class="three">
-        <div class="why-web-dev">
-            <h3>Why <span class="underline">learn</span> web development?</h3>
-            <p class="heading">Build Awesome Websites</p>
-            <p>Mark Zuckerberg built Facebook. Sachin Bansal built Flipkart. What will you build?</p>
-            <p class="heading">Be in demand</p>
-            <p>With 1.7 billion websites on the internet, it is one of the hottest career options with an average
-                fresher salary of 6 LPA for full stack developers according to Glassdoor.</p>
-            <p class="heading">Eat-Sleep-Code-Repeat</p>
-            <p>Be it rain or sunshine, coding is always on your mind.</p>
-        </div>
-        <div class="image">
-            <img src="demo1.jpg">
-        </div>
-    </section>
-
-    <section class="four">
-        <div class="image">
-            <img src="images/certificate.png">
-        </div>
-        <div class="details">
-            <h1><span class="underline">Industry Recognized</span> Web Development Certification</h1>
-            <p>100,000+ companies use Internshala for hiring every year. So a certificate from Internshala is recognized
-                everywhere.</p>
+        <h3 id="why-web-dev-heading-2"><span>Why <span class="underline">learn</span> web development?</span></h3>
+        <div class="why-web-dev-box">
+            <div class="why-web-dev">
+                <h3 id="why-web-dev-heading-1">Why <span class="underline">learn</span> web development?</h3>
+                <p class="heading">Build Awesome Websites</p>
+                <p>Mark Zuckerberg built Facebook. Sachin Bansal built Flipkart. What will you build?</p>
+                <p class="heading">Be in demand</p>
+                <p>With 1.7 billion websites on the internet, it is one of the hottest career options with an average
+                    fresher salary of 6 LPA for full stack developers according to Glassdoor.</p>
+                <p class="heading">Eat-Sleep-Code-Repeat</p>
+                <p>Be it rain or sunshine, coding is always on your mind.</p>
+            </div>
+            <div class="image">
+                <img src="demo1.jpg">
+            </div>
         </div>
     </section>
-
     <section class="five">
-        <div class="why-web-dev">
-            <h3>What <span class="underline">placement assistance</span> will you receive?</h3>
-            <p class="heading">Free Placement Prep Training</p>
-            <p>Learn how to build your resume, make great applications, and ace your interviews.</p>
-            <p class="heading">Curated internships & jobs</p>
-            <p>Get internships and fresher jobs as per your preference in your inbox.</p>
-            <p class="heading">Get highlighted on Internshala</p>
-            <p>Top performers will be highlighted in their internship & job applications on Internshala.</p>
-        </div>
-        <div class="image">
-            <img src="demo2.jpg">
+        <h3 id="placement-info-heading-2"><span>What <span class="underline">placement assistance</span> will you receive?</span></h3>
+        <div class="placement-info">
+            <div class="why-web-dev">
+                <h3 id="placement-info-heading-1"><span>What <span class="underline">placement assistance</span> will you receive?</span></h3>
+                <p class="heading">Free Placement Prep Training</p>
+                <p>Learn how to build your resume, make great applications, and ace your interviews.</p>
+                <p class="heading">Curated internships & jobs</p>
+                <p>Get internships and fresher jobs as per your preference in your inbox.</p>
+                <p class="heading">Get highlighted on Internshala</p>
+                <p>Top performers will be highlighted in their internship & job applications on Internshala.</p>
+            </div>
+            <div class="image">
+                <img src="demo2.jpg">
+            </div>
         </div>
     </section>
 
     <section class="six">
         <h1>How will your <span class="underline">training</span> work?</h1>
         <div class="features">
-
             <ul>
-                <li id="first">
-                    <img src="logo.png">
+                <li>
+                    <i class="fa-solid fa-chalkboard-user"></i>
                     <div>
                         <p class="heading">Learn concepts</p>
                         <p>Go through training videos to learn concepts</p>
                     </div>
                 </li>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-check-double"></i>
                     <div>
                         <p class="heading">1:1 doubt solving</p>
                         <p>Get your doubts solved by experts through Q&A forum within 24 hours</p>
                     </div>
                 </li>
-            </ul>
-
-
-            <ul>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-brain"></i>
                     <div>
                         <p class="heading">Test yourself</p>
                         <p>Test your knowledge through quizzes & module tests at regular intervals</p>
                     </div>
                 </li>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-pen"></i>
                     <div>
                         <p class="heading">Take final exam</p>
                         <p>Complete your training by taking the final exam</p>
                     </div>
                 </li>
-            </ul>
-
-
-            <ul>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-hands"></i>
                     <div>
                         <p class="heading">Hands-on practice</p>
                         <p>Work on assignments and projects. Use our in-browser IDE for coding practice</p>
                     </div>
                 </li>
                 <li>
-                    <img src="logo.png">
+                    <i class="fa-solid fa-award" style="padding:1rem 1.2rem;font-size: 1.8rem;"></i>
                     <div>
                         <p class="heading">Get certified</p>
                         <p>Get certified in Web Development upon successful completion of training</p>
@@ -337,34 +317,6 @@
             </div>
         </div>
     </section>
-
-    <section class="eight">
-        <h1>Your <span class="underline">Teachers</span></h1>
-        <div class="myTeachers">
-            <div class="card" >
-                <img src="demo1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card" >
-                <img src="demo2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card" >
-                <img src="demo3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="nine">
         <h1><span class="underline">Reviews</span> From Students</h1>
         <h2>Average Rating : 4.5</h2>
@@ -503,9 +455,120 @@
         </div>
     </div>
 
-   
+    <!-- Subscribe -->
+    <div class="container subscribe" id="subscribe">
+        <div class="col-md-12 p-4 row">
+        <div class="col-md-7">
+            <h2 style="color: #fff;">Subscribe us for latest newsletter</h2>
+            <p>Expand your knowledge and skills by choosing the right mentor!</p>
+        </div>
+        <div class="col-md-5 pt-3">
+            <div class="form">
+            <input type="email" name="Email" placeholder="Enter Email" required>
+            <button type="Submit" class="btn-3">Subscribe</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
-    
+     <!-- Footer -->
+    <footer class="text-center text-white">
+        <div class="footer-container text-left text-md-start mt-4">
+        <div class="row mr-3">
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 style="color: #fff">Quick Links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" id="hr-line" />
+            <p>
+                <a href="index.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Home</a>
+            </p>
+            <p>
+                <a href="career/career.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Career</a>
+            </p>
+            <p>
+                <a href="Hire-From-Us/index.html" class="text-white" style="font-size: 0.9rem;"><i class="fa-solid fa-angle-right mr-2"></i>Hire
+                From Us</a>
+            </p>
+            <p>
+                <a href="#!" class="text-white" style="font-size: 0.8rem;"><i class="fa-solid fa-angle-right mr-2"></i>BTH
+                - Talent Hunt Exam</a>
+            </p>
+            <p>
+                <a href="Baoiam-refer-page-main/index.html" class="text-white" style="font-size: 0.9rem;"><i class="fa-solid fa-angle-right mr-2"></i>Refer
+                and Earn</a>
+            </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 style="color: #fff">Other Links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" id="hr-line" />
+            <p>
+                <a href="Blog-Section-main/main-blog.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Blog</a>
+            </p>
+            <p>
+                <a href="#!" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Events and Contest</a>
+            </p>
+            <p>
+                <a href="contact-page/index.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Contact Us</a>
+            </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 style="color: #fff">Courses</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" id="hr-line" />
+            <p>
+                <a href="Blog-Section-main/blogs/blog2.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Entrepreneurship</a>
+            </p>
+            <p>
+                <a href="Blog-Section-main/blogs/blog1.html" class="text-white" style="font-size: 0.9rem;"><i
+                    class="fa-solid fa-angle-right mr-2"></i>Product Management</a>
+            </p>
+            <p>
+                <a href="#!" class="text-white" style="font-size: 0.9rem;"><i class="fa-solid fa-angle-right mr-2"></i>SAP
+                FICO</a>
+            </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-3 contact-us" style="padding-left: 15px;">
+            <!-- Links -->
+            <h6 style="color: #fff">Contact Us</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" id="hr-line" />
+            <p style="font-size: 0.8rem;"><i class="fas fa-home mr-1 p-2 rounded"></i>B Block Noida Sector 15 Uttar
+                Pradesh</p>
+            <p style="font-size: 0.9rem;"><i class="fas fa-envelope mr-1 p-2 rounded"></i>tutors@baoiam.com</p>
+            <p style="font-size: 0.9rem;"><i class="fas fa-phone mr-1 p-2 rounded"></i> +91-9992754599</p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100064896061625"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/beaoneinamillion/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://twitter.com/BAOIAM1"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd/mycompany/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="footer-end text-left p-2">
+        <div class="footer-end-container">
+            Copyright © 2023
+            <a class="text-white" href="https://mdbootstrap.com/">BAOIAM. </a>All Rights Reserved
+        </div>
+        </div>
+    </footer>
+
 
 </body>
 
