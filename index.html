@@ -68,15 +68,43 @@
               <a class="dropdown-item" href="./Hire-From-Us/index.html">Hire from us</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./ITIE-master/index.html">ITIE</a>
+
+          <li class="nav-item dropdown" id="nav-courses-one">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Courses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./course-master/index.html">Courses</a>
+              <a class="dropdown-item" href="./Entre-master/index.html">Entrepreneurship Course</a>
+              <a class="dropdown-item" href="./ITIE-master/index.html">ITIE Courses</a>
+            </div>
           </li>
 
-          <li class="nav-item dropdown" id="nav-courses">
+          <li class="nav-item dropdown" id="nav-courses-two">
             <a class="nav-link" href="#" role="button">Courses</a>
             <ul class="nav-courses-list">
-              <li><a href="./course-master/index.html">Courses <i class="fa-solid fa-location-arrow"></i></a></li>
-              <li><a href="./Entre-master/index.html">Enterpreneurship Courses </a></li>
+              <li>
+                <a>Courses <span class="arrow-icon">></span><span class="bar"></span></a>
+                <ul class="sub-courses-list">
+                  <li><a href="./course-master/index.html">Web Development</a></li>
+                  <li><a>Content Writing</a></li>
+                  <li><a>Graphic Designing</a></li>
+                  <li><a>Seo Marketing</a></li>
+                  <li><a>Digital Marketing Course</a></li>
+                  <li><a>Project Management</a></li>
+                  <li><a>Human Resources</a></li>
+                  <li><a>Corporate Law</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./Entre-master/index.html">Enterpreneurship Courses <span class="bar"></span></a>
+                <ul class="sub-courses-list"></ul>
+              </li>
+              <li >
+                <a href="./ITIE-master/index.html">ITIE Courses<span class="bar"></span></a>
+                <ul class="sub-courses-list"></ul>
+              </li>
             </ul>
           </li>
 
@@ -1099,6 +1127,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="JS/script.js"></script>
+  <script src="JS/navbar.js"></script>
 </body>
 
 </html>

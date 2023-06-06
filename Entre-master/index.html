@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entre</title>
     <link rel="stylesheet" href="style.css">
-
-
     <link rel="stylesheet" href="faq.css">
 
     <!-- slider2 -->
@@ -18,17 +16,25 @@
 
     <!-- Navbar -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 
     <!-- Social Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="slider1.css">
 
+    <!--js-->
+    <script src="../JS/navbar.js" defer></script>
 
-
-
-
+    <!--css-->
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
@@ -58,20 +64,39 @@
                   <a class="dropdown-item" href="../Hire-From-Us/index.html">Hire from us</a>
                 </div>
               </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="../ITIE-master/index.html">ITIE</a>
-              </li>
     
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown" id="nav-courses-one">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
                   Courses
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="../course-master/index.html">Courses</a>
-                  <a class="dropdown-item" href="../Entre-master/index.html">Entrepreneurship Course</a>
+                  <a class="dropdown-item" href="../ITIE-master/index.html">ITIE Courses<span class="bar"></span></a>
                 </div>
+              </li>
+
+              <li class="nav-item dropdown" id="nav-courses-two">
+                <a class="nav-link" href="#" role="button">Courses</a>
+                <ul class="nav-courses-list">
+                  <li>
+                    <a>Courses <span class="arrow-icon">></span><span class="bar"></span></a>
+                    <ul class="sub-courses-list">
+                      <li><a href="../course-master/index.html">Web Development</a></li>
+                      <li><a>Content Writing</a></li>
+                      <li><a>Graphic Designing</a></li>
+                      <li><a>Seo Marketing</a></li>
+                      <li><a>Digital Marketing Course</a></li>
+                      <li><a>Project Management</a></li>
+                      <li><a>Human Resources</a></li>
+                      <li><a>Corporate Law</a></li>
+                    </ul>
+                  </li>
+                  <li >
+                    <a href="../ITIE-master/index.html">ITIE Courses<span class="bar"></span></a>
+                    <ul class="sub-courses-list"></ul>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../Blog-Section-main/main-blog.html">Blog</a>
@@ -550,13 +575,14 @@
 
 </body>
 
-
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-    crossorigin="anonymous"></script> -->
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
     var lastScrollTop = 0;
     navbar = document.getElementById('navbar');

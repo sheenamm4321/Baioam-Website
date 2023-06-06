@@ -1,5 +1,5 @@
 // Adding and removing blocks when hover on links
-const navCourses = document.querySelector("#nav-courses")
+const navCourses = document.querySelector("#nav-courses-two")
 const navCoursesList = document.querySelector(".nav-courses-list")
 // const navCoursesAll = document.querySelector('.nav-courses-all')
 
@@ -22,30 +22,26 @@ document.querySelectorAll(".nav-courses-list>li").forEach((listItem)=>{
 
         if(!listItem.getAttribute("selected") || listItem.getAttribute("selected") === "false"){
             listItem.setAttribute("selected","true")
-            document.querySelector(".nav-courses-list>li[selected='true'] .nav-courses-all").style.display = "flex"
+            const navCoursesListLink = document.querySelector(".nav-courses-list>li[selected='true'] a")
+            navCoursesListLink.style.backgroundColor = "rgba(241, 214, 164, 0.603)";
+            navCoursesListLink.style.setProperty("color",'orangered',"important")
+            const bar = document.querySelector(".nav-courses-list>li[selected='true'] .bar");
+            bar.style.backgroundColor = "orangered"
+            console.log(bar)
+            document.querySelector(".nav-courses-list>li[selected='true'] .sub-courses-list").style.display = "flex"
         }
         
     })
       
     listItem.addEventListener('mouseleave',()=>{
         if(listItem.getAttribute("selected") === "true"){
-            document.querySelector(".nav-courses-list>li[selected='true'] .nav-courses-all").style.display = "none"
+            document.querySelector(".nav-courses-list>li[selected='true'] .sub-courses-list").style.display = "none"
+            const navCoursesListLink = document.querySelector(".nav-courses-list>li[selected='true'] a")
+            navCoursesListLink.style.backgroundColor = "transparent";
+            navCoursesListLink.style.setProperty("color",'#040052',"important");
+            document.querySelector(".nav-courses-list>li[selected='true'] .bar").style.backgroundColor = "transparent";
             listItem.setAttribute("selected","false")
         }
     })
     
-
 })
-
-// Adding effect when hovering on list items in navbar courses
-// const navCoursesListItems = document.querySelectorAll(".nav-courses-list>li")
-
-// navCoursesListItems.forEach((item)=>{
-//   item.addEventListener('mouseenter',()=>{
-//     item.setAttribute("selected",'true')
-//   })
-
-//   item.addEventListener('mouseleave',()=>{
-//     item.setAttribute("selected",'false')
-//   })
-// })

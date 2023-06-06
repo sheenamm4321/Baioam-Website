@@ -14,6 +14,7 @@ body {
 
 /* Navbar */
 header {
+    margin-top: 7em;
     background: var(--color-white);
     z-index: 1 !important;
     box-shadow: rgb(49, 49, 49);
