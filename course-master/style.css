@@ -51,12 +51,13 @@
 }
 
 .btn-enroll{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     width:100%;
 }
 
 .one h1{
-    font-size: clamp(0.8rem,calc(2.2rem + 0.5vw),2.6rem);
+    /* font-size: clamp(0.8rem,calc(2.2rem + 0.5vw),2.6rem); */
+    font-size:clamp(1rem, -0.175rem + 7.8vw, 3rem);
     font-weight: bold;
     color: #040052;
     margin-top: 1rem;
@@ -108,7 +109,7 @@
 .two h1{
     margin-bottom: 0.5em;
     text-align: center;
-    font-size: 55px;
+    font-size:clamp(1rem, -0.175rem + 8.33vw, 3.5rem);
     font-weight: bold;
     color: #040052;
     padding-bottom:45px;
@@ -127,6 +128,7 @@
     align-items: center;
     max-width: 100em;
     grid-template-columns: repeat(3,1fr);
+    padding-left:0 !important;
 }
 
 .two li{
@@ -183,7 +185,7 @@
 }
 
 .three h3, .five h3{
-    font-size: 3rem;
+    font-size:clamp(1rem, -0.175rem + 6.333vw, 3rem);
     margin-bottom: 2rem;
     font-weight: bold;
     color: #040052
@@ -230,6 +232,7 @@
     grid-template-columns: repeat(2,1fr);
     gap:2em;
     place-items:center;
+    padding-left:0 !important;
 }
 
 .six h1{
@@ -264,7 +267,7 @@
     text-align: center;
     margin-left: 3rem;
     margin-right: 3rem;
-    font-size: 55px;
+    font-size:clamp(1rem, -0.175rem + 7.3vw, 3rem);
     font-weight: bold;
     color: #040052;
     margin-bottom: 60px;
@@ -426,7 +429,7 @@ footer p{
         margin-bottom: -.4em;
         display:grid;
         place-items:center;
-        font-size: 2.8rem;
+        font-size:clamp(1rem, -0.175rem + 7.8vw, 3rem);
         width: 100%;
     }
 
@@ -442,9 +445,8 @@ footer p{
     }
 
     .six h1,
-    .seven h1,
     .nine h1{
-        font-size:2.5rem;
+        font-size:clamp(1rem, -0.175rem + 7.8vw, 3rem);
     }
 
     .nine h2{
@@ -472,17 +474,96 @@ footer p{
     .one img{
         display:none;
     }
+
+    .one .info{
+        margin-left: 0;
+        padding:1rem 2rem;
+    }
+
+    .why-web-dev-box img,
+    .placement-info img{
+        width:20em;
+    }
+
+    .two li,
+    .six li{
+        display: grid;
+        row-gap: 1em;
+        max-width: 18em;
+        justify-content: center;
+    }
+
+    .two li div p,.two li div .heading,
+    .six li div p,.six li div .heading{
+        font-size:0.8rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .two  li div .heading,
+    .six  li div .heading
+    {
+        font-size: 0.9rem;
+    }
+
+    .two i,
+    .six i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        width: 1.3em;
+        padding:0.5em 1em;
+        text-align: center;
+    }
+
+    .two ul,
+    .six ul{
+        row-gap: 1.5em;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+    }
+
+    .six ul{
+        row-gap: 1em;
+    }
+
+}
+
+@media (max-width:700px) {
+    .blog-slider {
+        margin: 0 !important;
+        margin-top: 8rem !important;
+    }
 }
 
 @media(max-width:600px){
     .eight .card{
         width: 20rem;
     }
+    .two ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .why-web-dev-box img,
+    .placement-info img{
+        display: none;
+    }
+
+
 }
 
 @media(max-width:500px){
-    .one h1, .two h1, .why-web-dev-box h3, .four h1, .placement-info h3, .six h1, .seven h1, .eight h1, .nine h1{
-        font-size: 2.8rem;
+    .accordion-body{
+        font-size: 0.8rem;
+    }
+    .accordion button{
+        font-size: 1rem;
+    }
+    .two li div p,
+    .six li div p{
+        font-size:0.5rem;
     }
     .one p, .one .button, .one .offer{
         font-size: 15px;
