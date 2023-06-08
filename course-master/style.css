@@ -542,6 +542,10 @@ footer p{
 }
 
 @media(max-width:500px){
+    .one{
+        padding:0 !important;
+    }
+
     .accordion-body{
         font-size: 0.8rem;
     }
@@ -555,6 +559,15 @@ footer p{
     .one p, .one .button, .one .offer{
         font-size: 15px;
     }
+
+    .one .offer{
+        font-size: 0.7rem;
+    }
+
+    .two li div .heading{
+        width:90%;
+    }
+
     .two li p, .why-web-dev-box p, .four p, .placement-info p, .six li p, .eight .card p{
         font-size: 15px;
     }
