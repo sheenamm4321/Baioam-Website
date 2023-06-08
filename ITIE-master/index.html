@@ -8,7 +8,6 @@
   <title>ITIE</title>
   <meta name="viewport" content="width=device-width" , initial-scale="1.0">
   <link rel="stylesheet" href="refer.css" />
-  <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
   <link rel="stylesheet" href="Header-footer.css">
@@ -24,6 +23,8 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="../JS/navbar.js" defer></script>
 
+  <!--CSS-->
+  <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
@@ -54,12 +55,24 @@
             </div>
           </li>
           <li class="nav-item dropdown" id="nav-courses-one">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button">
               Courses
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../course-master/index.html">Courses</a>
+              <a class="dropdown-item">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown-subcourses" data-toggle="dropdown" role="button">
+                    Regular Courses
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown-subcourses">
+                    <a class="dropdown-item" href="../course-master/index.html">Web Development</a>
+                    <a class="dropdown-item">Graphic Designing</a>
+                    <a class="dropdown-item">Seo Marketing</a>
+                    <a class="dropdown-item">Digital Marketing Course</a>
+                    <a class="dropdown-item">Project Management</a>
+                    <a class="dropdown-item">Human Resources</a>
+                    <a class="dropdown-item">Corporate Law</a>
+                </div>
+              </a>
               <a class="dropdown-item" href="../Entre-master/index.html">Entrepreneurship Course</a>
             </div>
           </li>

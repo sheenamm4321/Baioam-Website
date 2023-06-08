@@ -45,3 +45,27 @@ document.querySelectorAll(".nav-courses-list>li").forEach((listItem)=>{
     })
     
 })
+
+
+// Adding subdropdown of courses dropdown
+const navbarCoursesDropdownMenu = document.querySelector("#navbarDropdown-subcourses")
+const navbarDropdown = document.querySelector("#nav-courses-one")
+
+navbarDropdown.onclick = ()=>{
+  const navbarCoursesDropdownMenu = document.querySelector("#nav-courses-one .dropdown-menu")
+
+  if(navbarCoursesDropdownMenu.style.display !== "block"){
+    navbarCoursesDropdownMenu.style.display = "block";
+  }else{
+    navbarCoursesDropdownMenu.style.display = "none";
+  }
+
+}
+
+navbarCoursesDropdownMenu.onclick = ()=>{
+  const navbarCoursesDropdownMenu = document.querySelector("#nav-courses-one .dropdown-menu")
+
+  if(navbarCoursesDropdownMenu.style.display !== "block")
+    navbarCoursesDropdownMenu.style.display = "block";
+    
+}

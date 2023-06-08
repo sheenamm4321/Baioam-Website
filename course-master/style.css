@@ -358,15 +358,6 @@ footer p{
 
 
 @media(max-width:1150px){
-    .one{
-        padding: 0 !important;
-        margin-top: 3em;
-    }
-
-    header .navbar-nav {
-        padding-right: 1rem !important;
-    }
-
     header a,
     header button{
         font-size: 0.95rem !important;
@@ -374,19 +365,6 @@ footer p{
 
     header .nav-item button{
         padding:0.5rem 0.8rem;
-    }
-
-    .accordion{
-        width:80%;
-    }
-
-    .accordion-body{
-        font-size: 1.1rem;
-    }
-
-    .why-web-dev-box img,
-    .placement-info img{
-        width:30em;
     }
 }
 
@@ -396,6 +374,15 @@ footer p{
     }
     #nav-courses-two{
       display: none;
+    }
+
+    #nav-courses-one .dropdown-toggle+.dropdown-menu>.nav-link{
+        padding-left:1rem;
+        padding-top:0;
+    }
+
+    .dropdown-menu[aria-labelledby="navbarDropdown-subcourses"]{
+        border-radius: 0;
     }
   }
 

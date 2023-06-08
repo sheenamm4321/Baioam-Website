@@ -38,6 +38,8 @@
   <link rel="preload" as="image" href="images/Full time support/2.jpg">
   <link rel="preload" as="image" href="images/image-1.jpg" >
 
+  <!--Js-->
+  <script src="JS/navbar.js" defer></script>
 
 </head>
 
@@ -70,12 +72,25 @@
           </li>
 
           <li class="nav-item dropdown" id="nav-courses-one">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
               aria-haspopup="true" aria-expanded="false">
               Courses
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./course-master/index.html">Courses</a>
+              <a class="dropdown-item">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown-subcourses" data-toggle="dropdown" role="button">
+                    Regular Courses
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown-subcourses">
+                    <a class="dropdown-item" href="./course-master/index.html">Web Development</a>
+                    <a class="dropdown-item">Graphic Designing</a>
+                    <a class="dropdown-item">Seo Marketing</a>
+                    <a class="dropdown-item">Digital Marketing Course</a>
+                    <a class="dropdown-item">Project Management</a>
+                    <a class="dropdown-item">Human Resources</a>
+                    <a class="dropdown-item">Corporate Law</a>
+                </div>
+              </a>
               <a class="dropdown-item" href="./Entre-master/index.html">Entrepreneurship Course</a>
               <a class="dropdown-item" href="./ITIE-master/index.html">ITIE Courses</a>
             </div>
@@ -1127,7 +1142,6 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="JS/script.js"></script>
-  <script src="JS/navbar.js"></script>
 </body>
 
 </html>

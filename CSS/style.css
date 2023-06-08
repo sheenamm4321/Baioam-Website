@@ -81,6 +81,30 @@ header .nav-item a {
   font-weight: 600;
 }
 
+@media (max-width:991px) {
+  #nav-courses-one{
+    display: block;
+  }
+  #nav-courses-two{
+    display: none;
+  }
+
+  header .nav-item a,
+  header button{
+        font-size: 0.9rem;
+    }
+
+  #nav-courses-one .dropdown-toggle+.dropdown-menu>.nav-link{
+      padding-left:1.5rem;
+      padding-top:0;
+  }
+
+  .dropdown-menu[aria-labelledby="navbarDropdown-subcourses"]{
+      border-radius: 0;
+  }
+}
+
+
 header .navbar-brand {
   padding-left: 4rem;
 }
@@ -1725,14 +1749,5 @@ footer .contact-us p div i {
   .expertImage .about p{
       font-size: 0.8rem;
       padding-bottom: 1rem;
-  }
-}
-
-@media (max-width:991px) {
-  #nav-courses-one{
-    display: block;
-  }
-  #nav-courses-two{
-    display: none;
   }
 }
